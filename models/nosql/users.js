@@ -1,5 +1,5 @@
 /** Esquema de Mongosse para el modelo de ususario (users)
- * en la base de datos de mongo db
+ * en la base de datos de mongo db Atlasd 
  */
 
 const mongoose = require("mongoose");
@@ -42,12 +42,12 @@ const UserScheme = new mongoose.Schema(
     },
   },
   {
-    timestamps: true,
+    timestamps: true, // Marcas de tiempo para Create y update 
     versionKey: false,
   }
 );
 
-/*  Se exporta el modelo a partir del esquema  UserScheme con el nombre "users"
+/*  Se exporta el modelo a partir del esquema  UserScheme con el nombre "users" (coleccion)
     Este nombre se utilizará más tarde para realizar operaciones CRUD 
     en los documentos de usuario almacenados en la base de datos.
 */
