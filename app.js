@@ -24,6 +24,8 @@ app.use(cors())
 
 const port = process.env.PORT || 3000;
 
+//app.use("/api",require("./routers/tracks"))
+app.use("/api",require("./routers"))
 app.listen(port, () =>{
     console.log(`Tu  app esta lista desde el http://localhost:${port}`);
 })
